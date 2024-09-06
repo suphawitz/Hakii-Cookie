@@ -357,3 +357,62 @@ p { margin: 0; }
         
     .ar-sec04-price { font-weight: 600; }
 }
+
+
+/* ===================== */
+/* ------------ Sec05 | Type Cookie ------------ */
+.ar-sec05 { padding: 3rem 0; }
+.ar-sec05-con {
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+    /* position: relative; */
+    border-radius: 50px;
+    background-color: #fff;
+    box-shadow: var(--box-shadow);
+    overflow: hidden;
+
+    .ar-sec05-img {
+        width: 40%;
+        /* overflow: hidden; */
+        /* object-fit: cover; */
+        /* position: absolute;
+        top: -50%;
+        left: 0; */
+        /* max-width: 250px; */
+
+        img {
+            width: 100%;
+            /* width: auto; */
+            object-fit:cover;
+        }
+    }
+}
+
+.ar-sec05-info {
+    width: 60%;
+    padding: 2rem;
+    
+    h1 {
+        font-size: 1.6rem;
+    }
+    p { 
+        padding: 1rem 0;
+        color: var(--text-desc);
+    }
+    a { 
+        display: block;
+        text-align: end;
+        margin-top: 1.5rem;
+        padding-bottom: .2rem;
+        color: var(--theme-04);
+        text-decoration: underline var(--theme-04);
+        transition: .25s ease;
+
+        &:hover {
+            color: var(--theme-02);
+            text-decoration: underline var(--theme-02);  
+        }
+    }
+}
+
