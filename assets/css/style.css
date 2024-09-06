@@ -1,0 +1,359 @@
+/* Import font : Kanit */
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+*, html {
+    font-family: 'Kanit', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+img { width: 100%; }
+h1,h2,h3,h4,h5,h6 { margin: 0; color: #000; }
+a { color: #000; text-decoration: none; }
+a:hover { color: initial; }
+input { border: none; outline: none; padding: 0; }
+p { margin: 0; }
+
+
+:root {
+    --theme-01: #219C90;
+    --theme-02: #ffae00;
+    --theme-03: #FFC700;
+    --theme-04: #EE4E4E;
+
+    --theme-bg: #fff6d6;
+
+
+
+    --c-dark: #000000;
+    --c-white: #ffffff;
+    
+    --text-desc: #666;
+
+    --box-shadow: rgba(36, 35, 39, 0.15) 0px 20px 38px 0px;
+    /* --box-shadow: 0 1px 2px rgba(0,0,0,0.07), 0 2px 4px rgba(0,0,0,0.07), 0 4px 8px rgba(0,0,0,0.07), 0 8px 16px rgba(0,0,0,0.07); */
+
+}
+
+
+/* -------------------------------------------------- */
+/* ========== Frequently used Class ========== */
+.ar-container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.ar-btn {
+    display: inline-block;
+    padding: .5rem 1.5rem;
+    border-radius: 50px;
+    color: var(--c-white);
+    background: linear-gradient(145deg, rgba(247,159,112,1) 0%, rgba(252,70,96,1) 100%);
+    transition: all .25s ease;
+}
+.ar-btn:hover {
+    color: #fff;
+    background: linear-gradient(45deg, rgba(247,159,112,1) 0%, rgba(252,70,96,1) 100%);
+}
+
+.ar-btn-02 {
+    display: inline-block;
+    padding: .5rem 1.5rem;
+    border-radius: 50px;
+    color: var(--theme-02);
+    border: 1px solid var(--theme-02);
+    transition: all .25s ease;
+}
+.ar-btn-02:hover {
+    color: var(--c-white);
+    background-color: var(--theme-02);
+}
+
+.ar-topic span {
+    font-size: .8rem;
+    font-weight: 500;
+    color: var(--theme-02) !important;
+    text-transform: uppercase;
+}
+.ar-topic h1 {
+    font-size: 2.8rem;
+    font-weight: 800;
+}
+.ar-topic p {
+    padding-top: 1rem;
+    color: var(--text-desc);
+    line-height: 1.6rem;
+}
+
+/* -------------------------------------------------- */
+/* ========== Nav ========== */
+.ar-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    z-index: 999;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.07), 0 2px 4px rgba(0,0,0,0.07), 0 4px 8px rgba(0,0,0,0.07), 0 8px 16px rgba(0,0,0,0.07);
+}
+
+.ar-nav-con {
+    width: 100%;
+    padding: 1.5rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+
+
+.ar-nav-logo {
+    display: flex;
+    align-items: center;
+}
+
+.ar-nav-logo img {
+    width: 40px;
+}
+.ar-nav-logo h1 {
+    width: max-content;
+    font-size: 1.7rem;
+    margin-left: .5rem;
+    color: var(--c-dark);
+}
+
+.ar-nav-menu {
+    display: flex;
+    align-items: center;
+}
+
+.ar-nav-menu a {
+    width: max-content;
+    font-size: .9rem;
+    padding: 0 1rem;
+}
+
+.ar-nav-contact {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.ar-nav-contact p { font-size: .8rem !important; }
+
+.ar-nav-location {
+    width: 200px;
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+.ar-nav-tel p span { display: block; text-align: center; }
+
+.ar-nav-cart a i,
+.ar-nav-cart a svg {
+    font-size: .8rem;
+    padding: .7rem;
+    margin-left: .5rem;
+    background-color: #fff;
+    border-radius: 50%;
+    box-shadow: var(--box-shadow);
+}
+
+
+/* -------------------------------------------------- */
+/* ========== Header ========== */
+.ar-header {
+    width: 100%;
+    padding-top: 10rem;
+    /* background: rgb(255,244,3); */
+    /* background: linear-gradient(4deg, rgb(156, 157, 243) 0%, rgb(167, 224, 238) 35%, rgb(66, 92, 235) 100%); */
+}
+
+.ar-hd-info h1 {
+    font-size: 2.6rem;
+    font-weight: 800;
+}
+.ar-hd-info h1 span { color: var(--theme-03); }
+
+
+.ar-hd-contact-items {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    gap: .6rem;
+    padding: 4rem;
+    background-color: #fff;
+    border-radius: 22px;
+    box-shadow: var(--box-shadow);
+
+    i, svg { font-size: 34px; color: var(--theme-02); }
+    h1 {
+        display: block;
+        margin-top: 1rem;
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    p {
+        font-size: .8rem;
+        color: var(--text-desc);
+        text-align: center;
+    }
+}
+
+
+
+/* -------------------------------------------------- */
+/* ========== Main ========== */
+.ar-sec {
+    width: 100%;
+    padding: 6rem 0;
+}
+
+/* ===================== */
+/* ------------ Sec01 | About ------------ */
+
+
+/* ===================== */
+/* ------------ Sec02 | About Us ------------ */
+.ar-sec02-info {
+    padding: 6rem 0 4rem 0;
+    background-color: var(--theme-bg);
+}
+
+.ar-sec02-items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: .2rem;
+    padding: 3rem;
+    background-color: #fff;
+    border-radius: 22px;
+    box-shadow: var(--box-shadow);
+}
+
+.ar-sec02-items img {
+    width: 40%;
+}
+
+.ar-sec02-items h1 {
+    font-size: 1.4rem;
+    font-weight: 600;
+    padding: .6rem 0;
+    text-align: center;
+}
+
+.ar-sec02-items p {
+    font-size: .9rem;
+    font-weight: 300;
+    color: var(--text-desc);
+    text-align: center;
+}
+
+.ar-sec02-rate-items {
+    padding: 2rem 0;
+    margin: 2rem 0;
+    border-bottom: 1px solid var(--theme-02);
+}
+
+.ar-sec02-rate-con {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h1 {
+        font-size: 2.6rem;
+    }
+
+    p {
+        font-size: .9rem;
+        font-weight: 400;
+    }
+}
+
+
+/* ===================== */
+/* ------------ Sec03 | Meet Our Team ------------ */
+.ar-sec03 {
+    width: 100%;
+    padding: 4rem;
+}
+
+.ar-sec03-con {
+    position: relative;
+
+    img {
+        height: 350px;
+        object-fit: cover;
+        object-position: top;
+        box-shadow: var(--box-shadow);
+        border-radius: 50px;
+    }
+}
+
+.ar-sec03-info {
+    position: absolute;
+    bottom: -30px;
+    left: -50%;
+    transform: translate(60%, 0);
+    width: 90%;
+    padding: 1rem;
+    background-color: #fff;
+    border-radius: 50px;
+    text-align: center;
+    box-shadow: var(--box-shadow);
+
+    p {
+        font-size: .7rem;
+        color: var(--text-desc);
+    }
+}
+
+
+
+/* ===================== */
+/* ------------ Sec04 | Online Shop ------------ */
+.ar-sec04 {
+    padding: 3rem;
+    background-color: #fff0ba;
+
+}   
+.ar-sec04-con {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 0;
+    background-color: #fff;
+    border-radius: 4px;
+    box-shadow: var(--box-shadow);
+
+    .ar-sec04-img {
+        height: 300px;
+        overflow: hidden;
+        margin: 0 2rem;
+        border-radius: 2px;
+
+        img {
+            object-fit: cover;
+        }
+    }
+
+    h1 {
+        font-size: 1.5rem;
+        padding-top: 2rem;
+    }
+
+    .ar-sec04-rating {
+        padding: .3rem 0;
+
+        a { color: var(--theme-03); }
+    }
+        
+    .ar-sec04-price { font-weight: 600; }
+}
