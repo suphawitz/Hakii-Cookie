@@ -21,20 +21,28 @@ p { margin: 0; }
 :root {
     --theme-01: #219C90;
     --theme-02: #ffae00;
+    --theme-02-600: #e28400;
+    --theme-02-400: #ffcf1b;
+    --theme-02-300: #ffe146;
+    --theme-02-200: #fff085;
+    --theme-02-100: #fff7c5;
     --theme-03: #FFC700;
     --theme-04: #EE4E4E;
+    --theme-04-800: #981c1c;
+    --theme-04-700: #b71e1e;
+    --theme-04-400: #f77272;
+    --theme-04-300: #fba6a6;
 
     --theme-bg: #fff6d6;
 
 
 
-    --c-dark: #000000;
-    --c-white: #ffffff;
+    --c-dark: #000;
+    --c-white: #fff;
     
     --text-desc: #666;
 
     --box-shadow: rgba(36, 35, 39, 0.15) 0px 20px 38px 0px;
-    /* --box-shadow: 0 1px 2px rgba(0,0,0,0.07), 0 2px 4px rgba(0,0,0,0.07), 0 4px 8px rgba(0,0,0,0.07), 0 8px 16px rgba(0,0,0,0.07); */
 
 }
 
@@ -88,6 +96,10 @@ p { margin: 0; }
     color: var(--text-desc);
     line-height: 1.6rem;
 }
+
+/* Shape Liquid */
+.ar-liquid-svg { filter: drop-shadow(30px 10px 0px var(--theme-02)); }
+
 
 /* -------------------------------------------------- */
 /* ========== Nav ========== */
@@ -162,6 +174,19 @@ p { margin: 0; }
     border-radius: 50%;
     box-shadow: var(--box-shadow);
 }
+
+.ar-shape img {
+    width: 100%;
+    mix-blend-mode: screen;
+}
+
+.ar-shape-01 { background: url(../images/liquid-shape/shape-01.png) center / contain no-repeat; }
+.ar-shape-02 { background: url(../images/liquid-shape/shape-02.png) center / contain no-repeat; }
+.ar-shape-03 { background: url(../images/liquid-shape/shape-03.png) center / contain no-repeat; }
+.ar-shape-04 { background: url(../images/liquid-shape/shape-04.png) center / contain no-repeat; }
+.ar-shape-05 { background: url(../images/liquid-shape/shape-05.png) center / contain no-repeat; }
+.ar-shape-06 { background: url(../images/liquid-shape/shape-06.png) center / contain no-repeat; }
+
 
 
 /* -------------------------------------------------- */
@@ -408,11 +433,104 @@ p { margin: 0; }
         color: var(--theme-04);
         text-decoration: underline var(--theme-04);
         transition: .25s ease;
-
-        &:hover {
-            color: var(--theme-02);
-            text-decoration: underline var(--theme-02);  
-        }
+    }
+    a:hover {
+        color: var(--theme-02);
+        text-decoration: underline var(--theme-02);  
     }
 }
 
+/* ===================== */
+/* ------------ Sec06 | Our Blog ------------ */
+.ar-sec06 {
+    padding: 3rem 0;
+    background-color: #fff6d6;
+}
+
+.ar-sec06-items {
+    margin-top: 2rem;
+    background-color: #fff;
+    box-shadow: var(--box-shadow);
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.ar-sec06-items-img img {
+    height: 300px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.ar-sec06-info {
+    padding: 1rem;
+
+    h1 { font-size: 1.4rem; font-weight: 600; margin-bottom: .5rem; }
+    p { font-size: .9rem; }
+    .ar-sec06-type { padding-top: .6rem; }
+}
+
+.ar-sec06-type > div { padding-top: .5rem;}
+.ar-sec06-type i,
+.ar-sec06-type svg { color: var(--theme-03); padding-right: .3rem; }
+
+
+
+/* ===================== */
+/* ------------ Sec07 | Our Happy Customer ------------ */
+.ar-sec07 { padding: 3rem 0; position: relative; }
+
+.ar-slick-sec07 { margin-top: 3rem; }
+
+.ar-sec07-items {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    box-shadow: var(--box-shadow);
+    border-radius: 18px;
+}
+
+.ar-sec07-info h1 { font-weight: 400; }
+.ar-sec07-info > p {
+    font-size: 1rem;
+    color: var(--theme-03);
+}
+
+.ar-sec07-img {
+    padding: 2rem;
+}
+.ar-sec07-img img {
+    max-width: 260px;
+    max-height: 260px;
+    object-fit: cover;
+    border-radius: 50%;
+    color: #ffae00;
+}
+
+.ar-sec07-message {
+    margin-top: 1.2rem;
+    padding: 1rem;
+    border-radius: 12px;
+    background-color: var(--theme-02-100);
+
+    p {
+        font-weight: 300;
+        font-size: .9rem;
+    }
+}
+
+/* __________ Slick custom */
+.ar-slick-sec07 .slick-arrow {
+    z-index: 997;
+}
+
+.ar-slick-sec07 .slick-list {
+    padding: 4rem 0;
+}
+.ar-slick-sec07 .slick-arrow i,
+.ar-slick-sec07 .slick-arrow svg {
+    font-size: 35px;
+    color: #000;
+}
+.ar-slick-sec07 .slick-arrow::before { display: none;}
+.ar-slick-sec07 .slick-prev:before, .slick-next:before {color: #000 !important;}
