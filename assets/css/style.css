@@ -17,8 +17,8 @@ a:hover { color: initial; }
 input { border: none; outline: none; padding: 0; }
 p { margin: 0; }
 
-
-
+/* _________________________________________________________ */
+/* ___________________ Shape Divider ___________________*/
 .position-relative {
     position: relative;
 }
@@ -37,6 +37,9 @@ p { margin: 0; }
     width: calc(101% + 1.3px);
     height: 100px;
 }
+
+.custom-shape-divider-bottom-172641 { bottom: 0; }
+.custom-shape-divider-bottom-172641 .shape-fill { fill: var(--theme-02-100); }
 
 .custom-shape-divider-bottom-1726418068 { bottom: 0; }
 .custom-shape-divider-bottom-1726418068 .shape-fill { fill: #FFFFFF; }
@@ -60,7 +63,7 @@ p { margin: 0; }
     --theme-02-400: #ffcf1b;
     --theme-02-300: #ffe146;
     --theme-02-200: #fff085;
-    --theme-02-100: #fff7c5;
+    --theme-02-100: #fff3d3;
     --theme-03: #FFC700;
     --theme-04: #EE4E4E;
     --theme-04-800: #981c1c;
@@ -281,7 +284,7 @@ p { margin: 0; }
 /* ------------ Sec02 | About Us ------------ */
 .ar-sec02-info {
     padding: 10rem 0 4rem 0;
-    background-color: var(--theme-bg);
+    background-color: var(--theme-02-100);
 }
 
 .ar-sec02-items {
